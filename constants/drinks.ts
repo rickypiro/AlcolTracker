@@ -13,13 +13,13 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
   it: {
     appTitle: 'AlcolTracker',
     appSubtitle: 'Know Your Limits',
-
+    
     // Tabs
     tabCalculate: 'Calcolo',
     tabHistory: 'Storico',
     tabChart: 'Grafico',
     tabSettings: 'Impostazioni',
-
+    
     // Calculate page
     weight: 'Peso (kg)',
     gender: 'Sesso',
@@ -42,7 +42,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     minutes: 'Minuti',
     hours: 'Ore',
     calculate: 'Calcola BAC',
-
+    
     // Results
     results: 'Risultati',
     bacAtMoment: 'BAC al momento',
@@ -53,7 +53,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     saveResult: 'Salva Risultato',
     newCalculation: 'Nuovo Calcolo',
     resultSaved: 'Risultato salvato!',
-
+    
     // BAC levels
     sober: 'Sobrio',
     slightImpairment: 'Leggera alterazione',
@@ -61,13 +61,13 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     significantImpairment: 'Alterazione significativa',
     severeImpairment: 'Alterazione grave',
     dangerousLevel: 'Livello pericoloso',
-
+    
     // History
     noHistory: 'Nessun risultato salvato',
     deleteConfirm: 'Eliminare questo risultato?',
     delete: 'Elimina',
     cancel: 'Annulla',
-
+    
     // Chart
     allData: 'Tutti i dati',
     bacAtZeroOnly: 'Solo BAC al momento',
@@ -82,7 +82,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     apply: 'Applica',
     reset: 'Reset',
     noData: 'Nessun dato disponibile',
-
+    
     // Settings
     theme: 'Tema',
     lightTheme: 'Chiaro',
@@ -95,10 +95,10 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     curiosities: 'Curiosità',
     curiositiesInfo: 'Il corpo elimina circa 0.15 g/L di alcol per ora. Questo significa che ci vogliono circa 1-2 ore per metabolizzare un bicchiere standard di bevanda alcolica.',
     privacy: 'Privacy',
-    privacyInfo: 'Ultimo aggiornamento: 30 ottobre 2025\n\nBenvenuto su AlcolTracker.\nQuesta informativa spiega come l\'app gestisce i dati personali degli utenti in conformità al Regolamento UE 2016/679 (GDPR) e alle politiche di Google Play.\n\n1. Raccolta dei dati\n\nAlcolTracker non raccoglie, memorizza né trasmette dati personali identificabili.\nTutte le informazioni inserite (ad esempio sesso, peso o bevande consumate) vengono elaborate esclusivamente sul dispositivo dell\'utente e non vengono inviate a server esterni.\n\n2. Utilizzo dei dati\n\nI dati forniti dall\'utente vengono impiegati solo per calcolare una stima del tasso alcolemico (BAC).\nNon viene effettuata alcuna condivisione con soggetti terzi, né per scopi pubblicitari né statistici.\n\n3. Servizi di terze parti\n\nL\'app non utilizza strumenti di analisi, tracciamento, o pubblicità di terze parti (come Google Analytics, Firebase o simili).\nDi conseguenza, nessuna informazione identificabile lascia il dispositivo.\n\n4. Conservazione e cancellazione dei dati\n\nEventuali dati salvati (come lo storico o le preferenze dell\'utente) vengono archiviati solo in locale sul dispositivo.\nDisinstallando l\'app, tutti i dati vengono eliminati automaticamente.\n\n5. Sicurezza\n\nPoiché l\'app non trasmette informazioni su Internet, non vi è alcun rischio di intercettazione o accesso non autorizzato ai dati personali.\n\n6. Responsabilità\n\nI risultati forniti da AlcolTracker hanno scopo puramente informativo e indicativo.\nL\'app non deve essere utilizzata per determinare l\'idoneità alla guida o altre decisioni legali.\nGli sviluppatori non si assumono alcuna responsabilità per usi impropri dell\'applicazione o per eventuali conseguenze derivanti da interpretazioni errate dei dati forniti.',
+    privacyInfo: 'Tutti i dati sono salvati localmente sul tuo dispositivo. Non raccogliamo né condividiamo alcuna informazione personale.',
     terms: 'Termini di servizio',
-    termsInfo: 'Ultimo aggiornamento: 30 ottobre 2025\n\nI presenti Termini di Servizio regolano l\'utilizzo dell\'app AlcolTracker e definiscono i diritti e le responsabilità dell\'utente.\n\n1. Accettazione\n\nInstallando o utilizzando AlcolTracker, l\'utente accetta integralmente i presenti Termini.\nSe non si è d\'accordo, si prega di non utilizzare l\'applicazione.\n\n2. Funzionalità\n\nAlcolTracker consente di calcolare una stima indicativa del tasso alcolemico (BAC) in base ai dati inseriti dall\'utente.\nTale valore è puramente orientativo e non sostituisce esami clinici o strumenti di misurazione certificati.\n\n3. Limitazione di responsabilità\n\nGli sviluppatori di AlcolTracker non sono responsabili per danni diretti o indiretti derivanti dall\'uso o dall\'affidamento sui risultati forniti.\nL\'utente utilizza l\'app a proprio rischio e sotto la propria responsabilità.\n\n4. Uso consentito\n\nL\'app deve essere utilizzata in modo responsabile e nel rispetto delle leggi vigenti.\nÈ vietato:\n\nmodificare, decompilare o distribuire l\'app senza autorizzazione;\n\nutilizzarla per promuovere o incoraggiare comportamenti rischiosi o illegali, inclusa la guida in stato di ebbrezza.\n\n5. Modifiche ai termini\n\nGli sviluppatori si riservano il diritto di aggiornare in qualsiasi momento questi Termini di Servizio.\nLe modifiche entreranno in vigore al momento della pubblicazione della nuova versione all\'interno dell\'app.',
-
+    termsInfo: 'Questa app è solo a scopo informativo. Non sostituisce il parere medico. Non guidare mai dopo aver bevuto.',
+    
     // Errors
     errorWeight: 'Inserisci un peso valido',
     errorNoDrinks: 'Aggiungi almeno un alcolico',
@@ -769,7 +769,101 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     bacAtMomentOnly: '現在の BAC のみ',
     bacAfterTimeOnly: '時間後の BAC のみ',
   },
-
+  
+  ko: {
+    appTitle: 'AlcolTracker',
+    appSubtitle: '한계를 알아보세요',
+    
+    tabCalculate: '계산',
+    tabHistory: '기록',
+    tabChart: '차트',
+    tabSettings: '설정',
+    
+    weight: '체중 (kg)',
+    gender: '성별',
+    male: '남성',
+    female: '여성',
+    predefinedDrinks: '사전 정의된 음료',
+    customDrinks: '맞춤 음료',
+    beer: '맥주',
+    wine: '와인',
+    spritz: '스프리츠',
+    cocktail: '칵테일',
+    liqueur: '리큐어',
+    glasses: '잔',
+    addCustomDrink: '음료 추가',
+    drinkName: '이름',
+    alcoholPercentage: '알코올 도수 %',
+    volumeMl: '용량 (ml)',
+    saveForFuture: '향후 사용을 위해 저장',
+    timeSinceDrinking: '음주 후 시간 (선택 사항)',
+    minutes: '분',
+    hours: '시간',
+    calculate: 'BAC 계산',
+    
+    results: '결과',
+    bacAtMoment: '현재 BAC',
+    bacAfterTime: 'BAC 이후',
+    timeToSober: '깨는 시간',
+    soberIn: '깨는 시간',
+    alreadySober: '이미 깼습니다',
+    saveResult: '결과 저장',
+    newCalculation: '새 계산',
+    resultSaved: '결과가 저장되었습니다!',
+    
+    sober: '깬 상태',
+    slightImpairment: '경미한 손상',
+    mildImpairment: '중간 손상',
+    significantImpairment: '상당한 손상',
+    severeImpairment: '심각한 손상',
+    dangerousLevel: '위험 수준',
+    
+    noHistory: '저장된 결과가 없습니다',
+    deleteConfirm: '이 결과를 삭제하시겠습니까?',
+    delete: '삭제',
+    cancel: '취소',
+    
+    allData: '모든 데이터',
+    bacAtZeroOnly: '현재 BAC만',
+    bacAfterTimeOnly: '시간 후 BAC만',
+    filterByDate: '날짜별 필터',
+    specificDate: '특정 날짜',
+    dateRange: '날짜 범위',
+    startDate: '시작 날짜',
+    endDate: '종료 날짜',
+    filterByGender: '성별별 필터',
+    allGenders: '모두',
+    apply: '적용',
+    reset: '재설정',
+    noData: '사용 가능한 데이터가 없습니다',
+    
+    theme: '테마',
+    lightTheme: '라이트',
+    darkTheme: '다크',
+    language: '언어',
+    aboutBAC: 'BAC 정보',
+    bacInfo: 'BAC (혈중 알코올 농도)는 혈액 내 알코올 농도로, 그램/리터 (g/L)로 측정됩니다. 이 값은 알코올 중독 수준을 나타냅니다.',
+    howItWorks: '계산 방법',
+    formulaInfo: 'Widmark 공식을 사용합니다:\nBAC = (A / (r × P)) - (β × t)\n\n여기서:\n• A = 섭취한 알코올 (그램)\n• r = 분포 계수 (남성 0.68, 여성 0.55)\n• P = 체중 (kg)\n• β = 제거율 (0.15 g/L/h)\n• t = 경과 시간 (시간)',
+    curiosities: '흥미로운 사실',
+    curiositiesInfo: '신체는 시간당 약 0.15 g/L의 알코올을 제거합니다. 즉, 표준 음료를 대사하는 데 약 1-2시간이 걸립니다.',
+    privacy: '개인정보',
+    privacyInfo: '모든 데이터는 기기에 로컬로 저장됩니다. 개인 정보를 수집하거나 공유하지 않습니다.',
+    terms: '서비스 약관',
+    termsInfo: '이 앱은 정보 제공 목적으로만 사용됩니다. 의학적 조언을 대체하지 않습니다. 음주 후 절대 운전하지 마십시오.',
+    
+    errorWeight: '유효한 체중을 입력하세요',
+    errorNoDrinks: '최소 하나의 음료를 추가하세요',
+    errorCustomDrink: '맞춤 음료의 모든 필드를 완성하세요',
+    saveAsDefault: '기본값으로 저장',
+    savedDrinks: '저장된 음료',
+    filters: '필터',
+    filterByTime: '시간별 필터',
+    allDates: '모든 날짜',
+    bacAtMomentOnly: '현재 BAC만',
+    bacAfterTimeOnly: '시간 후 BAC만',
+  },
+  
   pt: {
     appTitle: 'AlcolTracker',
     appSubtitle: 'Conheça Seus Limites',

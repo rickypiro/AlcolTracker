@@ -60,25 +60,28 @@ export const getBACLevel = (bac: number): string => {
 };
 
 export const getBACColor = (bac: number, isDark: boolean): string => {
-  const maxBAC = 3.0;
-  const percentage = Math.min(100, (bac / maxBAC) * 100);
-  const position = percentage / 100;
-
-  const pos = Math.max(0, Math.min(1, position));
-
-  if (pos <= 0.5) {
-    const localPos = pos * 2;
-    const r = Math.round(40 + (255 - 40) * localPos);
-    const g = Math.round(167 + (235 - 167) * localPos);
-    const b = Math.round(69 + (59 - 69) * localPos);
-    return `rgb(${r}, ${g}, ${b})`;
-  } else {
-    const localPos = (pos - 0.5) * 2;
-    const r = Math.round(255);
-    const g = Math.round(235 - (235 - 82) * localPos);
-    const b = Math.round(59 - (59 - 82) * localPos);
-    return `rgb(${r}, ${g}, ${b})`;
-  }
+  const colors = isDark ? {
+    sober: '#66BB6A',
+    slight: '#9CCC65',
+    mild: '#FFCA28',
+    significant: '#FFA726',
+    severe: '#FF7043',
+    dangerous: '#EF5350',
+  } : {
+    sober: '#28A745',
+    slight: '#82C91E',
+    mild: '#FFC107',
+    significant: '#FF9800',
+    severe: '#FF5722',
+    dangerous: '#DC3545',
+  };
+  
+  if (bac < 0.2) return colors.sober;
+  if (bac < 0.5) return colors.slight;
+  if (bac < 0.8) return colors.mild;
+  if (bac < 1.5) return colors.significant;
+  if (bac < 2.5) return colors.severe;
+  return colors.dangerous;
 };
 
 export const formatTime = (hours: number): string => {

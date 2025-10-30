@@ -50,5 +50,5 @@ export interface SavedCustomDrink {
   volumeMl: number;
 }
 
-export type Language = 'ar' | 'zh' | 'de' | 'en' | 'es' | 'fr' | 'it' | 'ja' | 'pt';
+export type Language = 'ar' | 'zh' | 'de' | 'en' | 'es' | 'fr' | 'it' | 'ja' | 'ko' | 'pt';
 export type Theme = 'light' | 'dark';
