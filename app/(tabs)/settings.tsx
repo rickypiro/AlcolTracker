@@ -30,6 +30,7 @@ export default function SettingsPage() {
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'it', name: 'Italiano', flag: '🇮🇹' },
     { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: 'ko', name: '한국어', flag: '🇰🇷' },
     { code: 'pt', name: 'Português', flag: '🇵🇹' },
   ];
 
@@ -274,6 +275,5 @@ const styles = StyleSheet.create({
   modalText: {
     fontSize: 15,
     lineHeight: 24,
-    textAlign: 'left',
   },
 });
